@@ -27,6 +27,6 @@ To run the project, open it in Visual Studio and click on the play button (run b
 
 ## Future improvements
 1. Add loading gif while request is being processed.
-2. Show further stats about the obtain results including graphs, 
+2. Show further stats about the obtained results including graphs, 
    success percentages etc.
  
