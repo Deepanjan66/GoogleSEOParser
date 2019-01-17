@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace SEOParser.Helpers
 {
-    public class SEOClient
+    public class ScraperClient
     {
 
         /// <summary>

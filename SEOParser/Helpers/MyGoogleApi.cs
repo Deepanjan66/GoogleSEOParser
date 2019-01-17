@@ -27,7 +27,7 @@ namespace SEOParser.Helpers
         /// <returns>
         /// ArrayList<Integer> con
         /// </returns>
-        public ArrayList getSEO(string url, string keyword, int numResults, 
+        public ArrayList getSEORankings(string url, string keyword, int numResults, 
                                 Boolean tryBrute)
         {
             if (string.IsNullOrEmpty(url) || string.IsNullOrEmpty(keyword))
@@ -40,7 +40,7 @@ namespace SEOParser.Helpers
             int currUrlNum = 0;
 
             // client for making get requests
-            SEOClient client = new SEOClient();
+            ScraperClient client = new ScraperClient();
             // This regex will ignore all links except the ones mentioned
             // in the result cards. Will also included related results.
             string search = "url\\?q=[^&]+";

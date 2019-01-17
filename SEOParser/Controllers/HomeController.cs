@@ -25,7 +25,7 @@ namespace SEOParser.Controllers
 
             try
             {
-                ArrayList occurences = api.getSEO(url, keyword, 100, tryBrute == "true");
+                ArrayList occurences = api.getSEORankings(url, keyword, 100, tryBrute == "true");
                 ViewData["Message"] = String.Join('\n', occurences.ToArray());
             } catch
             {
