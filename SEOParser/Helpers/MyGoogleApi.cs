@@ -9,6 +9,7 @@ namespace SEOParser.Helpers
     {
         private const string searchFormatUrl = 
                     "https://www.google.com/search?q={0}&start={1}";
+        private const int delay = 5000;
 
         /// <summary>
         /// This method returns a list containing the indices at which the
@@ -62,7 +63,7 @@ namespace SEOParser.Helpers
                     // be a valid search result and not marked as 
                     // related by google
                     arrMatches = arrMatches.GetRange(0, 1);
-                    Task.Delay(2000).Wait();
+                    Task.Delay(delay).Wait();
                 }
 
                 foreach (Match match in arrMatches)
