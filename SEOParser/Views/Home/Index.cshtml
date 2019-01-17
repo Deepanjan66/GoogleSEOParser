@@ -7,7 +7,8 @@
 
 <p>This is a tool that you can use to check how well your website is optimised for google search. Just supply a keyword 
 that is relevant to your website and the domain name of your website. The tool will scrape the top 100 results and determines
-which ones directly link to that domain name</p>
+which ones directly link to that domain name. <b>Brute force mode</b> makes 100 requests and only takes the top result so 
+as to ensure that "related" results (as marked by Google) are not considered.</p>
 
 <form method="POST">
     <div class="form-group">
@@ -20,7 +21,7 @@ which ones directly link to that domain name</p>
     </div>
     <div class="form-group">
         <label>Want to run it in brute force mode?</label>
-        <small>Takes longer but more accurate because it doesn't count urls marked as "related" by Google</small>
+        <small>Takes around 4-5 minutes but more accurate</small>
         <select class="form-control" name="tryBrute">
             <option value="true">Yes</option>
             <option value="false">No</option>
