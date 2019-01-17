@@ -24,3 +24,9 @@ will also capture https://www.facebook.com/login/, https://www.facebook.com/game
 ## How to run
 
 To run the project, open it in Visual Studio and click on the play button (run button).
+
+## Future improvements
+1. Add loading gif while request is being processed.
+2. Show further stats about the obtain results including graphs, 
+   success percentages etc.
+ 
