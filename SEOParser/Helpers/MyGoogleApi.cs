@@ -9,7 +9,8 @@ namespace SEOParser.Helpers
     {
         private const string searchFormatUrl = 
                     "https://www.google.com/search?q={0}&start={1}";
-        private const int delay = 5000;
+        private const int bruteFroceDelay = 3000;
+        private const int delay = 2000;
 
         /// <summary>
         /// This method returns a list containing the indices at which the
@@ -63,7 +64,9 @@ namespace SEOParser.Helpers
                     // be a valid search result and not marked as 
                     // related by google
                     arrMatches = arrMatches.GetRange(0, 1);
-                    Task.Delay(delay).Wait();
+                    // Extra delay for brute force method on top
+                    // of the normal delay
+                    Task.Delay(bruteFroceDelay).Wait();
                 }
 
                 foreach (Match match in arrMatches)
@@ -79,6 +82,8 @@ namespace SEOParser.Helpers
                         resultIndices.Add(currUrlNum);
                     }
                 }
+                // To not get blocked by Google
+                Task.Delay(delay).Wait();
             }
 
             if (resultIndices.Count == 0)
