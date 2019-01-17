@@ -28,6 +28,12 @@ namespace SEOParser.Helpers
         public ArrayList getSEO(string url, string keyword, int numResults, 
                                 Boolean tryBrute)
         {
+            if (string.IsNullOrEmpty(url) || string.IsNullOrEmpty(keyword))
+            {
+                var retArray = new ArrayList();
+                retArray.Add(0);
+                return retArray;
+            }
             // To keep track of the number of urls checked so far
             int currUrlNum = 0;
 
