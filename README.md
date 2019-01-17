@@ -11,9 +11,9 @@ For example:
 keyword: `facebook`
 url: `www.facebook.com`
 
-![](https://ibb.co/xJgz5jX)
+![](https://github.com/Deepanjan66/GoogleSEOParser/blob/master/sample_screenshot.png)
 
-will also capture https://www.facebook.com/login/, https://www.facebook.com/games/, https://www.facebook.com/accentureaustralia/, https://www.facebook.com/facebook/about/ and number them as they have been shown as related results.
+will also capture https://www.facebook.com/login/, https://www.facebook.com/games/, https://www.facebook.com/accentureaustralia/, https://www.facebook.com/facebook/about/ and number them as they have been shown as related results. (The order may be slightly different from your browser.The numbers are generated from top to bottom by parsing through the source)
 
 2. If brute force mode is enabled, the parser will make 100 requests and accurately find only urls in search results. This is very inefficent as it will take significantly longer. When google receives a large number of requests from an ip within a short period of time, it will temporarily block the ip. To avoid this, a 5 second delay has been added after every request. However, this delay might not be enough to stop google from temporarily blocking requests from your ip (Not Recommended).
 
