@@ -14,7 +14,9 @@ namespace SEOParser.Helpers
         /// the get request</returns>
         /// <param name="url">URL.</param>
         public string getRequest(string url)
-        { 
+        {
+            if (string.IsNullOrEmpty(url)) throw new 
+                        ArgumentException("Null or empty argument passed in");
             return GetAsync(url).Result;
         }
 
