@@ -22,9 +22,19 @@ namespace SEOParser.Controllers
         {
 
             MyGoogleApi api = new MyGoogleApi();
-            ArrayList occurences = api.getSEO(url, keyword, 100, tryBrute == "true");
 
-            ViewData["Message"] = String.Join('\n', occurences.ToArray());
+            try
+            {
+                ArrayList occurences = api.getSEO(url, keyword, 100, tryBrute == "true");
+                ViewData["Message"] = String.Join('\n', occurences.ToArray());
+            } catch
+            {
+                // This will happen when google blocks your ip or their 
+                // service is genuinely unavailable
+                ViewData["Message"] = "Google may have temporarily blocked your " +
+                	                  "ip (likely) or their service is unavailable " +
+                	                  "(unlikely)";
+            }
 
             return View();
         }
