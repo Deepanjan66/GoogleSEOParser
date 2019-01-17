@@ -4,6 +4,6 @@ This is a tool that you can use to check how well your website is optimised for 
 
 ## Strategies
 
-1. If brute force mode is not enabled, the parser will parse result by pages. The parser will get all the result links and the *related* links as marked by google in its results.
+1. If brute force mode is not enabled, the parser will parse result by pages. The parser will get all the result links and the *related* links as marked by google in its results. This approach will only make 9-10 requests (Recommended).
 
-2. If brute force mode is enabled, the parser will make 100 requests and accurately find only urls in search results. This is very inefficent and will take 100 * 2 seconds so that the host ip does not get blocked by google.
+2. If brute force mode is enabled, the parser will make 100 requests and accurately find only urls in search results. This is very inefficent as it will take significantly longer. When google receives a large number of requests from an ip within a short period of time, it will temporarily block the ip. To avoid this, a 5 second delay has been added after every request. However, this delay might not be enough to stop google from temporarily blocking requests from your ip (Not Recommended).
