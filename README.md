@@ -4,6 +4,8 @@ This is a tool that you can use to check how well your website is optimised for 
 
 [[__WARNING__: THE RESULTS MIGHT NOT BE 100% ACCURATE AS THERE ARE PARSED FROM HTML SOURCE AND NOT USING GOOGLE'S API]]
 
+![](https://github.com/Deepanjan66/GoogleSEOParser/blob/master/sample_screenshot.png)
+
 ## Strategies
 
 1. If brute force mode is not enabled, the parser will parse result by pages. The parser will get all the result links and the *related* links as marked by google in its results. This approach will only make 9-10 requests (Recommended).
@@ -13,7 +15,7 @@ For example:
 keyword: `facebook`
 url: `www.facebook.com`
 
-![](https://github.com/Deepanjan66/GoogleSEOParser/blob/master/sample_screenshot.png)
+![](https://github.com/Deepanjan66/GoogleSEOParser/blob/master/sample_webpage.png)
 
 will also capture https://www.facebook.com/login/, https://www.facebook.com/games/, https://www.facebook.com/accentureaustralia/, https://www.facebook.com/facebook/about/ and number them as they have been shown as related results. (The order may be slightly different from your browser.The numbers are generated from top to bottom by parsing through the source)
 
