@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Find occurences of your url amongst top 100 results (Google)";
+}
+
+
+<h2>@ViewData["Title"]</h2>
+
+<p>This is a tool that you can use to check how well your website is optimised for google search. Just supply a keyword 
+that is relevant to your website and the domain name of your website. The tool will scrape the top 100 results and determines
+which ones directly link to that domain name</p>
+
+<form method="POST">
+    <div class="form-group">
+        <label>Keyword to search for</label>
+        <input name="keyword" class="form-control" placeholder="Enter keyword" />
+    </div>
+    <div class="form-group">
+        <label>URL you want to find SEO results for</label>
+        <input class="form-control" name="url" placeholder="Enter url" />
+    </div>
+    <div class="form-group">
+        <label>Want to run it in brute force mode?</label>
+        <small>Takes longer but more accurate because it doesn't count urls marked as "related" by Google</small>
+        <select class="form-control" name="tryBrute">
+            <option value="true">Yes</option>
+            <option value="false">No</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<h5>Results will be displayed here once you run the search</h5>
+<ul>@ViewData["Message"]</ul>
