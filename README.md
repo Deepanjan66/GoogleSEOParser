@@ -2,7 +2,7 @@
 
 This is a tool that you can use to check how well your website is optimised for google search. Just supply a keyword that is relevant to your website and the domain name of your website. The tool will scrape the top 100 results and determines which ones directly link to that domain name.
 
-[[__WARNING__: THE RESULTS MIGHT NOT BE 100% ACCURATE AS THERE ARE PARSED FROM HTML SOURCE AND NOT USING GOOGLE'S API]]
+[[__WARNING__: THE RESULTS MIGHT NOT BE 100% ACCURATE AS THESE ARE PARSED FROM HTML SOURCE AND NOT USING GOOGLE'S API]]
 
 ![](https://github.com/Deepanjan66/GoogleSEOParser/blob/master/sample_screenshot.png)
 
